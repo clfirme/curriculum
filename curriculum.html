@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fontes para o site: Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sedan&display=swap" rel="stylesheet">
+    <!--Site para obter os icones: fontawesome-->
+    <script src="https://kit.fontawesome.com/7d72931bac.js" crossorigin="anonymous"></script>
+    <title>Curriculum</title>
+    <style>
+        #header {
+            background-color: rgb(205, 205, 43);
+            margin-top:50px;
+            margin-bottom:50px;
+            font-family: "Sedan", serif;
+        }
+        #nameTitle {
+            background-color: white;
+            width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #nameTitle h1, h2 {
+            margin: 0;
+        }
+        h1, h2, h3 {
+            text-transform: uppercase;
+        }
+        #contact {
+            list-style-type: none;
+        }
+        #contact i {
+            width:30px;
+            color: rgb(205, 205, 43);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 30% auto;
+            grid-column-gap: 20px;
+        }
+        .sidebar, .content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        .card h3 {
+            font-family: "Oswald", sans-serif;
+        }
+        .card p, ul {
+            font-family: "Sedan", serif;
+        }
+        .card {
+            border: 1px solid rgb(241, 241, 208);
+            border-radius: 15px;
+            padding:20px;
+        }
+        @media screen and (max-width: 600px) {
+             ul {
+            font-size: 14px;
+            padding:0px;
+            }
+        }
+        @media screen and (min-width: 601px) {
+             ul {
+            font-size: 18px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            #contact {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="nameTitle">
+            <h1>Caio Lima Firme</h1>
+            <h2>Professor, pesquisador e escritor</h2>           
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="card">
+                <h3>Contato</h3>
+                <ul id="contact">
+                    <li><i class="fa-sharp fa-solid fa-envelope"></i>firme.caio@gmail.com</li>
+                    <li><i class="fa-sharp fa-solid fa-phone"></i>(84)986359717</li>
+                    <li><i class="fa-solid fa-location-dot"></i>Natal, RN</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>Professor de Química Orgânica</li>
+                    <li>Pesquisador em Química Teórica</li>
+                    <li>Escritor de livros de química internacionais</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Formação acadêmica</h3>
+                <ul>
+                    <li>Bacharel e licenciado em Química - UFRuralRJ</li>
+                    <li>Mestre em Ciência e Tecnologia de Polímeros - IMA/UFRJ</li>
+                    <li>Doutorado em Físico-Química Orgânica</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Links</h3>
+                <ul>
+                    <li><a target="_blank" href="https://orcid.org/0000-0002-5203-6262">ORCID</a></li>
+                    <li><a target="_blamk" href="https://www.webofscience.com/wos/author/record/I-6832-2012">Researcher ID</a></li>
+                    <li><a target="_blank" href="https://www.scopus.com/authid/detail.uri?authorId=9037027300">Scopus author ID</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card">
+              <h3>Sobre mim</h3>
+              <p>Professor de Química Geral pela UERJ em 2003. Professor de Química Orgânica pela UFRN desde 2009 até o momento. Atuo como pesquisador em Química Teórica aplicadas ao estudo de mecanismos de reações orgânicas, interações entre proteína e substrato, ligações químicas e interações intermoleculares. Orientador de alunos de mestrado e doutorado no PPGQ/UFRN. Escritor de 1 livro nacional de química e 2 livros internacionais de química. Fluente em inglês. Formação em ciências de dados. Atualmente, estudante de Engenharia de Software.</p>  
+            </div>
+            <div class="card">
+                <h3>Experiência profissional</h3>
+                <p> Professor de inglês e microempresário Wisdom - 1995-2000 <br/>
+                    Professor substituto da UERJ - 2003 <br/>
+                    Professor assistente da USU - 2003 <br/>
+                    Orientador de mestrandos e doutorandos do PPGQ/UFRN - 2010-2017 <br/>
+                    Professor de química orgânica da UFRN - 2009-
+                </p>  
+              </div>    
+        </div>
+    </div>
+</body>
+</html>
